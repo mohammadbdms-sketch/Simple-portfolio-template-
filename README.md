@@ -21,22 +21,6 @@ This template is designed for developers, students, and beginners who want to sh
 - CSS3
 - JavaScript
 
-📁 Project Structure
-
-portfolio/
-│
-├── index.htm
-├── style.css
-├── script.js
-│
-└── img/
-    ├── bg1.webp
-    ├── nodejs.webp
-    ├── java.webp
-    ├── react.webp
-    ├── css.webp
-    └── ...
-
 🚀 Getting Started
 
 1. Download or clone this repository.

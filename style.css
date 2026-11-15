@@ -1,0 +1,373 @@
+:root{
+    color-scheme: dark;
+    --text-color: #f1f5f9;
+    --link-color: #a78bfa;
+    --background-color: #0b1020;
+    --surface-color: #151d32;
+    --border-color: #33415f;
+    --accent-glow: rgba(167, 139, 250, .22);
+}
+
+:root[data-theme="light"]{
+    color-scheme: light;
+    --text-color: #172033;
+    --link-color: #6d28d9;
+    --background-color: #f5f3ff;
+    --surface-color: #ffffff;
+    --border-color: #ddd6fe;
+    --accent-glow: rgba(109, 40, 217, .12);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+    transition: background-color .25s ease, color .25s ease;
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left a{
+    color: var(--text-color );
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a{
+    color: var(--text-color );
+    margin: 0 10px;
+}
+
+.theme-toggle{
+    border: 1px solid var(--border-color);
+    background: var(--surface-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    padding: 6px 9px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav .right a:last-child{
+    color:var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span{
+    margin-left: 1px;
+}
+
+/* section 1 hero */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.hero .text{
+    flex: 5;
+}
+
+.hero .text h2{
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.hero .text .links{
+    margin: 25px 0;
+}
+
+.hero .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.hero .text .links a:hover{
+    color: var(--text-color);
+    border-color: 2px solid var(--text-color);
+    
+}
+
+.hero .headshot{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.hero .headshot img{
+    border-radius: 50%;
+    width: 240px;
+    object-fit: contain;
+}
+
+/* section 2 skills */
+.skills{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.skills h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.skills .text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--surface-color);
+    object-fit: contain;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.skills .cells .cell:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 0 18px var(--accent-glow);
+}
+
+.skills .cells .cell img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.skills .cells .cell span{
+    font-size: 18px;
+}
+
+/* section 3 testimony */
+.testimony{
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+
+.testimony h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.testimony .group{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.testimony .person-detail{
+    text-align: center;
+    flex: 2;
+}
+
+.testimony .group .text{
+    flex: 8;
+}
+
+.testimony .person-detail img{
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    margin-bottom: 10px;
+}
+
+.testimony .person-detail p{
+    font-weight: 600;
+}
+
+.testimony .person-detail p:last-child{
+    font-weight: normal;
+}
+
+/* section 4 contact */
+.contact{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contact h2{
+    font-size: 35px;    
+}
+
+.contact .group{
+    display: flex;
+    gap: 50px ;
+}
+
+.contact .group .text{
+    flex: 3;
+    margin-top: 20px;
+}
+
+.contact .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .group form input,
+.contact .group form  textarea{
+    font-family: sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+}
+
+.contact .group form button{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #fff;
+    background-color: var(--link-color);
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.contact .group form button:hover{
+    filter: brightness(.9);
+    border-radius: 10px;
+}
+
+ @media(max-width:800px) {
+    /* hero */
+    .hero .text h2{
+        font-size:35px ;
+    }
+ }
+
+ @media(max-width:740px) {
+    /* hero */
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .hero .headshot img{
+        width: 200px;
+    }
+
+    /* section 3 testimony */
+    .testimony {
+        text-align: center;
+    }
+    .testimony .group{
+        flex-direction: column;
+    }
+
+    /* section 4 contact */
+    .contact .group{
+        flex-direction: column;
+    }
+ }
+
+
+@media (max-width: 600px) {
+    /* navbar */
+    nav{
+        padding: 0 20px;
+    }
+
+    nav .right a span{
+        display: none;
+    }
+
+     nav .right a:last-child{
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    /* hero */
+    .hero {
+        padding: 0 20px;
+    }
+
+    .hero .text h2{
+        font-size: 30px;
+    }
+
+    /* section 2 skills */
+    .skills{
+        padding: 0 20px;
+    }
+
+    .skills .cells .cell span{
+        font-size: 16px;
+    }
+    
+    /* section 3 testimony */
+    .testimony {
+        padding: 0 20px;
+    }
+
+    /* section 4 contact */
+    .contact {
+        padding: 0 20px;
+    }
+}
+
+/* Small cyber-style accents */
+.hero .text h2, .skills h2, .testimony h2, .contact h2{
+    text-shadow: 0 0 18px var(--accent-glow);
+}
+
+@media (max-width: 600px){
+    .theme-toggle{ margin-right: 3px; padding: 5px 7px; }
+}

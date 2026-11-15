@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+     integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+<body>
+     
+    <nav>
+        <div class="left">
+            <a href="/">Abba</a>
+        </div>
+        <div class="right">
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch colour theme">☀️</button>
+            <a href="http://github.com" target="_blank" rel="noopener 
+            noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>github</span>
+            </a>
+
+            <a href="http://linkedin.com" target="_blank" rel="noopener 
+            noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>linkedin</span>
+            </a>
+
+            <a href="mailto:mohammadbdms@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email </span>
+            </a>       
+        
+        </div>
+    </nav>
+
+    <main> 
+        <!-- section 1 hero -->
+         <section class="hero">
+             <div class="text">
+                <h2>Hi I'm Abba </h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid eos facere modi ipsum in atque obcaecati fugit, laudantium cum saepe quae a provident sint molestiae similique est expedita animi aspernatur? Reprehenderit accusantium culpa vero inventore eaque necessitatibus ullam. Nostrum, cupiditate. Corrupti est temporibus aut reprehenderit magni. Dignissimos nemo harum soluta?</p>
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>skills</span>
+                    </a>
+
+                    <a href="#testimony">
+                        <i class="fa-solid fa-pen"></i>
+                        <span>Testimony</span>
+                    </a>
+
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>contact</span>
+                    </a>
+                </div>
+             </div>
+
+             <div class="headshot">
+                <img src="./img/img8.webp" alt="image">
+             </div>
+         </section>
+
+         <!-- section 2 skills -->
+         <section id="skills" class="skills">
+            <h2>skills</h2>
+            <div class="text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. At dignissimos ullam voluptates molestiae consequatur, natus eligendi facilis amet magnam ea explicabo rem blanditiis nemo laudantium sequi numquam modi dolore dicta. Odit reiciendis, ipsum possimus quidem dolores error odio quae porro.
+            </div>
+            <div class="cells">
+                <div class="cell">
+                    <img src="./img/htm.webp" alt="">
+                    <span>HTML</span>
+                </div>
+
+                <div class="cell">
+                    <img src="./img/css.webp" alt="">
+                    <span>CSS</span>
+                </div>
+
+                <div class="cell">
+                    <img src="./img/java.webp" alt="">
+                    <span>Javascript</span>
+                </div>
+
+                <div class="cell">
+                    <img src="./img/nodejs.webp" alt="">
+                    <span>Node js</span>
+                </div>
+
+                <div class="cell">
+                    <img src="./img/react.webp" alt="">
+                    <span>React</span>
+                </div>
+            </div>
+         </section>
+
+         <!-- section 3 testimony -->
+         <section id="testimony"
+          class="testimony">
+            <h2>Testimony</h2>
+
+            <div class="group">
+                <div class="person-detail">
+                    <img src="./img/bg1.webp" alt="abba">
+                    <p>Abba</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae asperiores, repellendus sapiente similique eveniet in ad nisi doloribus quod debitis iste aliquid odit sint consequuntur id voluptate. A nisi quo tenetur corporis consequuntur facere quaerat ipsa rem perferendis voluptates hic cumque quasi suscipit tempore obcaecati, aliquid illum asperiores magni ratione."</div>
+            </div>
+         </section>
+
+         <!-- section 4 contact -->
+         <section id="contact" class="contact">
+            <h2>Contact</h2>
+
+            <div class="group">
+                <div class="text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, ipsa. Sequi iste quibusdam dolores ea unde consequatur tempora repudiandae nulla nesciunt doloribus dolorem itaque ut esse, rem deleniti at libero quaerat sed totam nostrum ipsum. Voluptatibus culpa magnam nam ratione accusantium inventore vel debitis mollitia, eum quod provident iste repellat?
+                </div>
+
+                <form >
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+         </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

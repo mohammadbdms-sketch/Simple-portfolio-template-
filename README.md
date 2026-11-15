@@ -25,7 +25,7 @@ This template is designed for developers, students, and beginners who want to sh
 
 1. Download or clone this repository.
 2. Open the project folder.
-3. Open "index.htm" in your browser.
+3. Open "index.html" in your browser.
 4. Customize the content, images, colors, and links to make it your own.
 
 🎨 Customization
